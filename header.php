@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>GI</title>
+    <title>GInv</title>
 
 
     <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
