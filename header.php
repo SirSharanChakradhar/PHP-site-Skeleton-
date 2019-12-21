@@ -20,11 +20,12 @@
 
 
     <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a6ad77e818.js" crossorigin="anonymous"></script>
     <link type="text/css" href="./assets/bds.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/pure.css">
     <link rel="stylesheet" href="./assets/bds.css">
     <link rel="stylesheet" href="./assets/docsify.css">
-  
+
 </head>
 
 
@@ -34,13 +35,13 @@
     <!-- Here is the header where I decided to include the login form for this tutorial. -->
 
     <aside class="sidebar">
-        <div class="sidebar-nav">
-            <ul>
-                <li>
-                    <p><a href="index.php" class="docsify-logo">
-                            <img src="./assets/svg/biings-ds-logo.svg" data-origin="./assets/svg/biings-ds-logo.svg"
-                                alt="" data-no-zoom="">
-                        </a></p>
+        <div class="sidebar-nav docsify-logo">
+            <ul class="">
+                <li class="is-size-4 has-text-white has-background-black-ter">
+                    <p class="is-size-4 has-text-white" href="index.php">Guest Inventory
+                            
+                            <span class="has-text-weight-bolder fas fa-boxes" > </span>
+                    </p>
                 </li>
                 <div class="menu is-small">
                     <ul class="menu-list">
@@ -71,7 +72,7 @@
 
     Also notice that using PHP, we can choose whether or not to show the login/signup form, or to show the logout form, if we are logged in or not. We do this based on SESSION variables which I explain in more detail in the login.inc.php file!
     -->
-       <?php
+        <?php
     if (!isset($_SESSION['id'])) {
       echo '<a href="login.php" class="btn btn-warning btn-icon ml-sm-3 d-none d-md-block">
       <span class="btn-inner--icon">
@@ -83,6 +84,6 @@
     }
     ?>
 
-        
+
     </div>
 </body>
