@@ -4,7 +4,7 @@
  
 ?>
 
-<section class="content is-narrow">
+<section class="content">
 
     <div class="markdown-section">
         <h1 class="title is-1 is-family-secondary">Login</h1>
@@ -38,16 +38,17 @@
          {
           echo '<form action="includes/logout.inc.php" method="post">
           <div class="box is-well">
-          <hr class="is-size-8">
+          
             <button class="button is-dark" type="submit" name="login-submit">Logout</button>
             </div>
           </form>';
         }
         ?>
     </div>
-</section>
-
-<?php
+    
+    <?php
   // And just like we include the header from a separate file, we do the same with the footer.
   require "footer.php";
 ?>
+</section>
+

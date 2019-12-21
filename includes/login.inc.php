@@ -3,7 +3,8 @@
 if (isset($_POST['login-submit'])) {
 
   // We include the connection script so we can use it later.
-  // We don't have to close the MySQLi connection since it is done automatically, but it is a good habit to do so anyways since this will immediately return resources to PHP and MySQL, which can improve performance.
+  // We don't have to close the MySQLi connection since it is done automatically, but it is a good habit to do so anyways since this will immediately return
+  // resources to PHP and MySQL, which can improve performance.
   require 'dbh.inc.php';
 
   // We grab all the data which we passed from the signup form so we can use it later.
@@ -14,7 +15,8 @@ if (isset($_POST['login-submit'])) {
 
   // We check for any empty inputs. (PS: This is where most people get errors because of typos! Check that your code is identical to mine. Including missing parenthesis!)
   if (empty($mailuid) || empty($password)) {
-    header("Location: ../index.php?error=emptyfields&mailuid=".$mailuid);
+    header("Location: ../login.php?error=emptyfields&mailuid=".$mailuid);
+    echo "username/email or password are empty !! ";
     exit();
   }
   else {
@@ -30,7 +32,7 @@ if (isset($_POST['login-submit'])) {
     // Then we prepare our SQL statement AND check if there are any errors with it.
     if (!mysqli_stmt_prepare($stmt, $sql)) {
       // If there is an error we send the user back to the signup page.
-      header("Location: ../index.php?error=sqlerror");
+      header("Location: ../login.php?error=sqlerror");
       exit();
     }
     else {

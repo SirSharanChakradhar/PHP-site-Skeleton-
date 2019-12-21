@@ -19,46 +19,12 @@
     <title>GInv</title>
 
 
-    <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link type="text/css" href="./assets/bds.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/pure.css">
     <link rel="stylesheet" href="./assets/bds.css">
     <link rel="stylesheet" href="./assets/docsify.css">
-    <style type="text/css">
-    .medium-zoom-overlay {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        opacity: 0;
-        transition: opacity .3s;
-        will-change: opacity
-    }
-
-    .medium-zoom--opened .medium-zoom-overlay {
-        cursor: pointer;
-        cursor: zoom-out;
-        opacity: 1
-    }
-
-    .medium-zoom-image {
-        cursor: pointer;
-        cursor: zoom-in;
-        transition: transform .3s cubic-bezier(.2, 0, .2, 1)
-    }
-
-    .medium-zoom-image--hidden {
-        visibility: hidden
-    }
-
-    .medium-zoom-image--opened {
-        position: relative;
-        cursor: pointer;
-        cursor: zoom-out;
-        will-change: transform
-    }
-    </style>
+  
 </head>
 
 
@@ -80,21 +46,21 @@
                     <ul class="menu-list">
                         <p></p>
                         <li>
-                        <p><a href="signup.php">Signup</a></p>
+                            <p><a href="signup.php">Signup</a></p>
                         </li>
                         <li>
-                        <p><a href="login.php">Login</a></p>
+                            <p><a href="login.php">Login</a></p>
                         </li>
-                                              
+
                     </ul>
                 </div>
-                
+
             </ul>
         </div>
     </aside>
 
     <!-- Page content -->
-    <div class="main">
+    <div>
 
 
 
@@ -105,17 +71,18 @@
 
     Also notice that using PHP, we can choose whether or not to show the login/signup form, or to show the logout form, if we are logged in or not. We do this based on SESSION variables which I explain in more detail in the login.inc.php file!
     -->
-        <?php
+       <?php
     if (!isset($_SESSION['id'])) {
       echo '<a href="login.php" class="btn btn-warning btn-icon ml-sm-3 d-none d-md-block">
       <span class="btn-inner--icon">
       <i class="fa fa-sign-in mr-3"></i>Login</a>';
     }
     else if (isset($_SESSION['id'])) {
-      echo '<a href="includes/logout.inc.php" class="btn btn-neutral btn-icon ml-sm-3 d-none d-md-block"><span class="btn-inner--icon"><i class="fas fa-hiking mr-3"></i>Logout</a>';
+      echo '<a href="includes/logout.inc.php" class="btn btn-neutral btn-icon ml-sm-3 d-none d-md-block">
+      <span class="btn-inner--icon"><i class="fas fa-hiking mr-3"></i>Logout</a>';
     }
     ?>
 
-        ...
+        
     </div>
 </body>
