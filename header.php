@@ -37,8 +37,8 @@
     <aside class="sidebar">
         <div class="sidebar-nav docsify-logo">
             <ul class="">
-                <li class="is-size-4 has-text-white has-background-black-ter">
-                    <p class="is-size-4 has-text-white" href="index.php">Guest Inventory
+                <li class="is-size-4">
+                    <p class="is-size-4 " href="index.php">Guest Inventory
                             
                             <span class="has-text-weight-bolder fas fa-boxes" > </span>
                     </p>

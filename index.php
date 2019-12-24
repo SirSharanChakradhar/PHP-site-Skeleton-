@@ -7,7 +7,7 @@
 
     
       
-        <section class="content is-narrow">
+        <section class="content">
           <!--
           We can choose whether or not to show ANY content on our pages depending on if we are logged in or not. I talk more about SESSION variables in the login.inc.php file!
           -->
@@ -21,7 +21,8 @@
           ?>
         </section>
      
-    
+        <iframe src='login.php' width='100%' height='100%'>Sorry, your browser doesn’t support inline frames. <a
+                href='login.php'>See the page that should be here.</a></iframe>
 
 <?php
   // And just like we include the header from a separate file, we do the same with the footer.

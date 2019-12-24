@@ -46,10 +46,12 @@ blockquote
     border-left: 2px solid #9389e1;
     color: #84848f;
 }
-footer
+.footer
 {
     letter-spacing: .2px;
     line-height: 1.5em;
+    flex-shrink: 0;
+   
 }
 footer > .level
 {
