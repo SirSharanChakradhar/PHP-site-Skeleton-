@@ -383,6 +383,7 @@ html {
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%
+    
 }
 
 article, aside, figure, footer, header, hgroup, section {
@@ -7834,7 +7835,7 @@ a.is-underlined.is-regular:hover {
 }
 
 .box.hover-to-box:hover {
-    background: transparent
+    background: transparent;
 }
 
 .box.hover-to-white:hover, .box.is-white {
@@ -9616,5 +9617,5 @@ svg.has-fill-white {
 }
 
 .afd {
-    color: red
+    color: red;
 }

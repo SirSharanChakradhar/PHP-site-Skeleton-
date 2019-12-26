@@ -37,13 +37,11 @@
             <ul class="">
                 <li class="is-size-4">
                     <p class="is-size-4 " href="index.php">Guest Inventory
-                            
-                            <span class="has-text-weight-bolder fas fa-boxes" > </span>
+                        <span class="has-text-weight-bolder fas fa-boxes"> </span>
                     </p>
                 </li>
                 <div class="menu is-small">
                     <ul class="menu-list">
-                        
                         <li>
                             <p><a href="signup.php">Signup</a></p>
                         </li>
@@ -74,11 +72,11 @@
     if (!isset($_SESSION['id'])) {
       echo '<a href="login.php" class="btn btn-warning btn-icon ml-sm-3 d-none d-md-block">
       <span class="btn-inner--icon">
-      <i class="fa fa-sign-in mr-3"></i>Login</a>';
+      <i class="fa fa-sign-in mr-3"></i> Login</a>';
     }
     else if (isset($_SESSION['id'])) {
       echo '<a href="includes/logout.inc.php" class="btn btn-neutral btn-icon ml-sm-3 d-none d-md-block">
-      <span class="btn-inner--icon"><i class="fas fa-hiking mr-3"></i>Logout</a>';
+      <span class="btn-inner--icon"><i class="fas fa-hiking mr-3"></i> Logout</a>';
     }
     ?>
 
