@@ -32,8 +32,6 @@
 
 <body>
 
-    <!-- Here is the header where I decided to include the login form for this tutorial. -->
-
     <aside class="sidebar">
         <div class="sidebar-nav docsify-logo">
             <ul class="">
@@ -45,7 +43,7 @@
                 </li>
                 <div class="menu is-small">
                     <ul class="menu-list">
-                        <p></p>
+                        
                         <li>
                             <p><a href="signup.php">Signup</a></p>
                         </li>
