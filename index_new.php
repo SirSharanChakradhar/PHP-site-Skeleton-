@@ -3,6 +3,8 @@
   session_start();
   // "require" creates an error message and stops the script. "include" creates an error and continues the script.
   require "includes/dbh.inc.php";
+  require "includes/showmenu.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +17,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>GInv</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+	
     <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a6ad77e818.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/bds.css">
@@ -45,11 +47,13 @@
     </header>
     
     <aside class="sidebar">
-        <div class="sidebar-nav docsify-logo">
+        <div class="sidebar-nav">
             <ul class="">
-                <li class="is-size-3">
-                    <p class="is-size-3 " href="index.php">Guest Inventory<span class="has-text-weight-bolder fas fa-boxes" > </span>
-                    </p>
+                <li class="is-size-4">
+                <p class="is-size-4 " href="index.php">
+                 <strong>Office <br/> Jerks    
+                 <span class="has-text-weight-bolder fas fa-boxes"> </span></strong>
+                </p>
 				</li>
 				<br/>
                 <div class="menu is-small">
@@ -63,6 +67,9 @@
                         </li>
 
                     </ul>
+        <?= show_menu() ?>
+
+
                 </div>
 
             </ul>
@@ -73,8 +80,7 @@
 	<object class="content" href="login.php" onload="this.width=screen.width;this.height=screen.height;">
 
 
-        <h1>side head</h1>
-        <p>generateText(300)</p>
+       
 
 
 </object>
@@ -85,5 +91,5 @@
     </footer>
 
 </body>
-
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 </html>
