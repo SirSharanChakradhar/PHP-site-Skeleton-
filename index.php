@@ -1,30 +1,105 @@
 <?php
-  // To make sure we don't need to create the header section of the website on multiple pages, we instead create the header HTML markup in a separate file which we then attach to the top of every HTML page on our website. In this way if we need to make a small change to our header we just need to do it in one place. This is a VERY cool feature in PHP!
-  require "header.php";
+  // First we start a session which allow for us to store information as SESSION variables.
+  session_start();
+  // "require" creates an error message and stops the script. "include" creates an error and continues the script.
+  require "includes/dbh.inc.php";
+  require "includes/showmenu.php";
+
 ?>
+<!DOCTYPE html>
+<html lang="en">
 
-    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="renting">
+    <meta name="author" content="guest Inventory">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
+        <title>GInv</title>
 
-    
+    <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a6ad77e818.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/bds.css">
+    <link rel="stylesheet" href="./assets/css/template.css">
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        
+          
+<div class="level">
+
+  <div class="level-left">
+    <div class="level-item"><?php
+    if (!isset($_SESSION['id'])) {
+      echo '<a href="login.php" class="btn btn-warning btn-icon ml-sm-3 d-none d-md-block">
+      <span class="btn-inner--icon">
+      <i class="fa fa-sign-in mr-3"></i>Login</a>';
+    }
+    else if (isset($_SESSION['id'])) {
+      echo '<a href="includes/logout.inc.php" class="btn btn-neutral btn-icon ml-sm-3 d-none d-md-block">
+      <span class="btn-inner--icon"><i class="fas fa-hiking mr-3"></i>Logout</a>';
+    }
+    ?></div>
+    <div class="level-item">Item 2</div>
+    <div class="level-item">Item 3</div>
+  </div>
+  <div class="level-center">
+      <div class="level-item">Item 4</div>
+      <div class="level-item">Item 5</div>
+  </div>
+</div>
+
+
       
-        <section class="content">
-          <!--
-          We can choose whether or not to show ANY content on our pages depending on if we are logged in or not. I talk more about SESSION variables in the login.inc.php file!
-          -->
-          <?php
-          if (!isset($_SESSION['id'])) {
-            echo '<p class="login-status">You are logged out!</p>';
-          }
-          else if (isset($_SESSION['id'])) {
-            echo '<p class="login-status">You are logged in!</p>';
-          }
-          ?>
-        </section>
-     
-        <iframe src='login.php' width='100%' height='100%'>Sorry, your browser doesn’t support inline frames. <a
-                href='login.php'>See the page that should be here.</a></iframe>
+    </header>
 
-<?php
-  // And just like we include the header from a separate file, we do the same with the footer.
-  require "footer.php";
-?>
+    <aside class="sidebar">
+        <div class="sidebar-nav">
+            <ul class="docsify-logo">
+                <li class="is-size-4">
+                    <p class="is-size-3 " href="index.php">
+                        <strong>Office <br /> Jerks
+                            <span class="has-text-weight-bolder fas fa-boxes"> </span></strong>
+                    </p>
+                </li>
+                <br />
+                <div class="menu">
+                   
+                        
+                        
+                        <?=        
+                           show_menu(); ?>
+                           
+                   
+                </div>
+
+            </ul>
+            
+        </div>
+    </aside>
+
+
+    <div class="content container is-desktop" href="./login.php">
+
+
+        ayyo
+
+        enduko
+
+
+    </div>
+    <footer class="footer">
+
+        <span class="btn-inner--icon"><i class="fas fa-hiking mr-3"></i>
+    </footer>
+
+</body>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+</html>

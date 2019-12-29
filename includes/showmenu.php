@@ -1,35 +1,46 @@
 <?php
-require "includes/dbh.inc.php";
+
+
+
+
+require 'dbh.inc.php';
+
 
 function show_menu(){
-    require "includes/dbh.inc.php";
-    $conn = mysqli_connect();
-    $menus = '';
-    $menus = gmm(null)($conn);
+	global $conn;
+	$menus = "";
+	$menus .= gmm($conn);
+	return $menus;
 }
 
 
 function gmm( $conn, $parent_id=NULL){
-    require "includes/dbh.inc.php";
-    $menu = '';
-    $sql = '';
-    if(is_null($parent_id) ) {
-        $sql="select * from 'gi_kitting' where 'parent_id'=NULL";
-    }
-    else{
-        $sql="select * from 'gi_kitting' where 'parent_id'=$parent_id";
-    }
-    $result = mysqli_query($conn,$sql);
+	
+	$menu = "";
+	$sql = "";
+	$row="";
+	if(is_null($parent_id) ) {
+		 $sql="select * from `gi_kitting` where `parent_id` is null";
+	}
+	else{
+		$sql="select * from `gi_kitting` where `parent_id`='$parent_id'";
+	}
+	$result = mysqli_query($conn,$sql) or die(mysqli_error($conn));
 
-    while($row = mysqli_fetch_assoc($result)){
-        if( $row['page']){
-        $menu .='<li><a href="'.$row['page'].'">'.$row['title'].'</a></li>';
-        }
-        else{
-            $menu .='<li><a href="#">'.$row['title'].'</a></li>';
-        }
-        $menu .= '<ul class="menu-list">'.gmm($conn,$row['id']).'</ul>';
-    }
-    return $menu;
-    
+	
+	while($row = mysqli_fetch_assoc($result)){
+		if( $row['page']){
+			$menu .='<li><p><a href=./'.$row['page'].'>'.$row['title'].'</a></p></li>';
+		}
+		else{
+			$menu .='<li><p><a href="#">'.$row['title'].'</a></p></li>';
+		}
+		$menu .= '<ul class="menu-list">'.gmm($conn, $row['id']).'</ul>';
+		$menu .= '</li>';
+	 }
+	 return $menu;
+	 
 }
+
+
+  ?>

@@ -51,6 +51,29 @@
 
                     </ul>
                 </div>
+                <li>
+                    <p><span class="subtitle is-7 has-text-dark has-text-weight-semibold is-uppercase">Foundation</span>
+                    </p>
+                    <div class="menu is-small">
+                        <ul class="menu-list">
+                            <p></p>
+                            <li>
+                                <p><a href="#/color">Colors</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#/icons">Iconography</a></p><!-- - [Rules](rules) -->
+                            </li>
+                            <li>
+                                <p><a href="#/typo">Typography</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#/voice">Voice &amp; Tone</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p></p>
+                </li>
 
             </ul>
         </div>
