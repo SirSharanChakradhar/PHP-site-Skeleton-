@@ -70,15 +70,14 @@
 	</aside>
 	
 	
-	<object class="content" href="login.php" onload="this.width=screen.width;this.height=screen.height;">
+	<object class="content" href="login.php"">
 
 
         <h1>side head</h1>
         <p>generateText(300)</p>
 
 
-</object>
-	
+</object>	
     <footer class="footer">
         CoolLogo
         <span class="btn-inner--icon"><i class="fas fa-hiking mr-3">Logout</i>
