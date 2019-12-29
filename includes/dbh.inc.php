@@ -1,13 +1,17 @@
 <?php
-$dBServername = "localhost";
-$dBUsername = "root";
-$dBPassword = "";
-$dBName = "guestnventory";
+
+ $dBServername = "localhost";
+ $dBUsername = "root";
+ $dBPassword = "";
+ $dBName = "guestnventory";
 
 // Create connection
+
 $conn = mysqli_connect($dBServername, $dBUsername, $dBPassword, $dBName);
 
-// Check connection
 if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+    echo "Error: Unable to connect to MySQL." . PHP_EOL;
+    echo "Debugging error: " . mysqli_connect_errno() . PHP_EOL;
+    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+    exit;
 }
