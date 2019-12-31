@@ -34,7 +34,7 @@ body, html {
   overflow: auto;
   background: transparent;
   padding-top: 5%;
-  left: 14%;
+  left: 12%;
   transition: left 0.25s ease;
 }
 
@@ -65,6 +65,7 @@ aside.sidebar {
   font-size: 13px;
   background-color: #faf8fc;
   position: fixed;
+  border-right: 1px dashed #2d2236;
 }
 
 .sidebar {
@@ -95,32 +96,49 @@ aside.sidebar ul li p {
   left: 12%;
   padding-right:10px;
   padding-left:10px;
-
-  /* bottom: 0; */
-  top: 10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  color:#222;
   width: 88%;
-  height: 5%;
+  height: auto;
   overflow: none;
   /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
   background: #faf8fc;
   font-size: large;
+  top:0%;
+  border-bottom: 1px dashed #2d2236;
 }
 .footer {
   position: absolute;
   left: 12%;
-  bottom: 0;
+  bottom: 0%;
   width: 88%;
-  height: 5%;
+  height: 10%;
   overflow: none;
   /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
   background: #faf8fc;
   border: none;
   padding-right:10px;
   padding-left:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-top: 1px dashed #2d2236;
 }
 
 .logo {
   position: absolute;
-  top: 1.5rem;
+  top: 1rem;
   left: 2em;
+  border: none;
+}
+
+:root {
+  --fa-primary-color: #b00020;
+  --fa-secondary-color: #000000;
+}
+
+.theme-ravenclaw {
+  --fa-secondary-opacity: 1.0;
+  --fa-primary-color: rgb(4, 56, 161);
+  --fa-secondary-color: rgb(108, 108, 108);
 }

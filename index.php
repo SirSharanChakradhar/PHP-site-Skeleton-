@@ -1,9 +1,28 @@
 <?php
 // First we start a session which allow for us to store information as SESSION variables.
 session_start();
+
+
 // "require" creates an error message and stops the script. "include" creates an error and continues the script.
 require "includes/dbh.inc.php";
-require "includes/showmenu.php";
+
+define( 'RESTRICTED', true );
+
+if ( defined( 'RESTRICTED' ) ) {
+    if ( !isset( $_SESSION['id'] ) ) {
+      header( 'Location: login.php' );
+      exit();
+    }
+}
+else {
+    
+    if ( isset( $_SESSION['id'] ) ) {
+      header( 'Location: index.php' );
+      exit();
+    }
+}
+require "includes/showmenu.inc.php";
+
 
 ?>
 <!DOCTYPE html>
@@ -17,12 +36,13 @@ require "includes/showmenu.php";
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
+     <!-- <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- <script src="https://kit.fontawesome.com/a6ad77e818.js" crossorigin="anonymous"></script> -->
+    <script src="./assets/js/fontawesome_proforfree.js" crossorigin="anonymous"></script>
     <title>GInv</title>
-
-    <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a6ad77e818.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/bds.css">
+    <link rel="stylesheet" href="./assets/css/bds.css">
     <link rel="stylesheet" href="./assets/css/template.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 
 
 </head>
@@ -30,37 +50,30 @@ require "includes/showmenu.php";
 <body>
 
     <header class="header">
-
-
         <div class="level">
-
             <div class="level-left">
-
-                <div class="level-item">Item 1</div>&nbsp;
+                <div class="level-item"><a href="login.php" target="#/content">Item 1</a></div>&nbsp;
                 <div class="level-item">Item 2</div>
             </div>
             <div class="level-right">
-                <div class="level-item">Item 3</div>
+                <div class="level-item"></div>
                 &nbsp;
                 <div class="avatar">
-                    <div class="has-background-grey-light">N</div>
+                <div class="has-background-grey-light"> <?php echo ucfirst(substr($_SESSION['uid'],0,1)); ?></div>
                 </div>
-                <span><?php echo $SESSION ["uidUSER"];?></span>
-                &nbsp;&nbsp;
-                <div class="level-item"><?php
-if (!isset($_SESSION['id'])) {
-    echo '<div href="./login.php" class="button is-glowing is-info">
-      <span class="btn-inner--icon"> <i class="fa fa-sign-in mr-3"></i> Login</div>';
-} else if (isset($_SESSION['id'])) {
-    echo '<div href="includes/logout.inc.php" class="button is-outlined is-warning">
-      <span class="btn-inner--icon"><i class="fas fa-hiking mr-3"></i>Logout</div>';
-}
-?></div>
+                <span><?php echo $_SESSION['uid'];?></span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div class="level-item"><?php
+                        if (!isset($_SESSION['id'])) {
+                            echo '<a href="./login.php" class="button is-glowing is-info">
+                            <span class="btn-inner--icon"> <i class="fa fa-sign-in mr-3"></i> Login</a>';
+                        } else if (isset($_SESSION['id'])) {
+                            echo '<a href="includes/logout.inc.php" class="button is-small is-glowing is-danger">
+                            <span class="btn-inner--icon"><i class="fas fa-hiking"></i>&nbsp;Logout</a>';
+                        }
+                        ?></div>
             </div>
         </div>
-
-
-
     </header>
     <button class="sidebar-toggle" aria-label="Menu">
         <div class="sidebar-toggle-button">B<span></span><span></span><span></span></div>
@@ -70,34 +83,32 @@ if (!isset($_SESSION['id'])) {
             <ul class="logo is-box">
                 <li class="is-size-4">
                     <p class="is-size-3 " href="index.php">
-                        <strong>Office <br /> Jerks
-                            <span class="has-text-weight-bolder fas fa-boxes"> </span></strong>
+                        <strong>Office <br/> Jerks
+                            <i class="fad fa-cubes"> </i></strong>
                     </p>
                     <hr>
                 </li>
 
-                <div class="menu"> <?=show_menu();?>
+                <div class="menu is-block-fullhd"> <?=show_menu();?>
+                    <a href="login.php"></a>
                 </div>
             </ul>
         </div>
     </aside>
 
 
-    <div class="content" href="./login.php">
-
-
-        ayyo
-
-        enduko
+    <div class="content">
+    <i class="fad fa-gopuram"></i>
+<iframe href="login.php" height='auto' width='auto'></frame>
 
 
     </div>
-    <footer class="footer">
+    <!-- <footer class="footer">
 
         <span class="btn-inner--icon"><i class="fas fa-hiking mr-3"></i>
-    </footer>
+    </footer> -->
 
 </body>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
 
 </html>
