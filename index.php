@@ -36,7 +36,7 @@ require "includes/showmenu.inc.php";
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
-     <!-- <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
     <!-- <script src="https://kit.fontawesome.com/a6ad77e818.js" crossorigin="anonymous"></script> -->
     <script src="./assets/js/fontawesome_proforfree.js" crossorigin="anonymous"></script>
     <title>GInv</title>
@@ -59,11 +59,11 @@ require "includes/showmenu.inc.php";
                 <div class="level-item"></div>
                 &nbsp;
                 <div class="avatar">
-                <div class="has-background-grey-light"> <?php echo ucfirst(substr($_SESSION['uid'],0,1)); ?></div>
+                    <div class="has-background-grey-light"> <?php echo ucfirst(substr($_SESSION['uid'],0,1)); ?></div>
                 </div>
                 <span><?php echo $_SESSION['uid'];?></span>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                                        <div class="level-item"><?php
+                <div class="level-item"><?php
                         if (!isset($_SESSION['id'])) {
                             echo '<a href="./login.php" class="button is-glowing is-info">
                             <span class="btn-inner--icon"> <i class="fa fa-sign-in mr-3"></i> Login</a>';
@@ -83,7 +83,7 @@ require "includes/showmenu.inc.php";
             <ul class="logo is-box">
                 <li class="is-size-4">
                     <p class="is-size-3 " href="index.php">
-                        <strong>Office <br/> Jerks
+                        <strong>Office <br /> Jerks
                             <i class="fad fa-cubes"> </i></strong>
                     </p>
                     <hr>
@@ -98,8 +98,55 @@ require "includes/showmenu.inc.php";
 
 
     <div class="content">
-    <i class="fad fa-gopuram"></i>
-<iframe href="login.php" height='auto' width='auto'></frame>
+
+
+
+
+        <aside class="subnav">
+            <a name="menu">Menu</a>
+            <ul>
+                <li><a href="#a001">Jump to a001</a></li>
+                <li><a href="#a002">Jump to a002</a></li>
+                <li><a href="#a003">Jump to a003</a></li>
+            </ul>
+        </aside>
+        
+        <div class="spacer"><a name="a001">a001</a></div>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <hr class="is-visible">
+  <hr class="is-visible is-wavy">
+        <div class="spacer"><a name="a002">a002</a></div>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <hr class="is-visible">
+  <hr class="is-visible is-wavy">
+        <div class="spacer"><a name="a003">a003</a></div>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+        <p>paragraph text paragraph text paragraph text</p>
+
+        <hr>
+        <hr class="is-visible">
+  <hr class="is-visible is-wavy">
+        <p><a href="#menu">Jump to Menu</a></p>
+        <hr class="is-visible">
+  <hr class="is-visible is-wavy">
+        <p class="Return"><a href="http://www.tagindex.net/html/link/a_name.html">Return</a></p>
 
 
     </div>

@@ -10,21 +10,22 @@
 
 
 
+
 html {
   overflow-x: none;
   overflow-y: none;
   background-color: #fff;
-
 }
 
-body, html {
+body,
+html {
   height: 100%;
   overflow: none;
+  /* background-color: #202020; */
 }
 
 .content {
   position: fixed;
-  left: 230px;
   /* Width of the nav bar */
   bottom: 100px;
   /* Set this to the height of the footer */
@@ -33,15 +34,16 @@ body, html {
   bottom: 0;
   overflow: auto;
   background: transparent;
-  padding-top: 5%;
+  /* padding-top: 5%; */
   left: 12%;
   transition: left 0.25s ease;
+  margin-bottom: auto;
+  /* background-color: #202020; */
 }
 
 .sidebar-toggle {
   position: fixed;
   display: none;
-
   bottom: 3px;
   left: 3px;
   padding: 0.8em !important;
@@ -55,6 +57,7 @@ body, html {
   transition: opacity 0.3s;
   width: 284px;
   z-index: 30;
+  /* background-color: #202020; */
 }
 aside.sidebar {
   padding-top: 2.75rem;
@@ -63,9 +66,10 @@ aside.sidebar {
   width: 12%;
   border-right: none;
   font-size: 13px;
-  background-color: #faf8fc;
+  /* background-color: #faf8fc; */
   position: fixed;
-  border-right: 1px dashed #2d2236;
+  border-right: 0.5px solid #ffffff;
+  /* background-color: #202020; */
 }
 
 .sidebar {
@@ -79,6 +83,7 @@ aside.sidebar {
   transition: transform 0.25s ease-out;
   width: 300px;
   z-index: 20;
+  background-color: #202020;
 }
 
 .sidebar-nav {
@@ -94,19 +99,20 @@ aside.sidebar ul li p {
 .header {
   position: absolute;
   left: 12%;
-  padding-right:10px;
-  padding-left:10px;
-  padding-top:10px;
-  padding-bottom:10px;
-  color:#222;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* color:#222; */
   width: 88%;
   height: auto;
   overflow: none;
   /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
   background: #faf8fc;
   font-size: large;
-  top:0%;
-  border-bottom: 1px dashed #2d2236;
+  top: 0%;
+  border-bottom: 0.5px solid #ffffff;
+  /* background-color: #202020; */
 }
 .footer {
   position: absolute;
@@ -116,13 +122,14 @@ aside.sidebar ul li p {
   height: 10%;
   overflow: none;
   /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
-  background: #faf8fc;
+  /* background: #faf8fc; */
   border: none;
-  padding-right:10px;
-  padding-left:10px;
-  padding-top:10px;
-  padding-bottom:10px;
-  border-top: 1px dashed #2d2236;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 0.5px solid #ffffff;
+  /* background-color: #202020; */
 }
 
 .logo {
@@ -134,11 +141,37 @@ aside.sidebar ul li p {
 
 :root {
   --fa-primary-color: #b00020;
-  --fa-secondary-color: #000000;
+  --fa-secondary-color: #fff;
 }
 
 .theme-ravenclaw {
-  --fa-secondary-opacity: 1.0;
+  --fa-secondary-opacity: 1;
   --fa-primary-color: rgb(4, 56, 161);
   --fa-secondary-color: rgb(108, 108, 108);
+}
+
+
+.spacer {
+  margin-top: 250px;
+}
+
+.Return {
+  margin-top: 50px;
+  text-align: center;
+}
+
+aside.subnav{
+  position: absolute;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  width: 12%;
+  top: 0;
+  bottom: auto;
+  right: 0;
+  borde-left: 0.5px dashed #111;
+
+
 }
