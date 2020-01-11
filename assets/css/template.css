@@ -1,4 +1,4 @@
-/*  
+/*    
 *:not(path):not(g) {
 	color:                    hsla(210, 100%, 100%, 0.9) !important;
 	background:               hsla(210, 100%,  50%, 0.5) !important;
@@ -6,19 +6,15 @@
 
 	box-shadow: none !important;
 }
-  */
+ */
 
-
-
-
-html {
-  overflow-x: none;
-  overflow-y: none;
+/* html {
+  /* overflow-x: none;
+  overflow-y: none; */
   background-color: #fff;
-}
+} */
 
-body,
-html {
+body, html {
   height: 100%;
   overflow: none;
   /* background-color: #202020; */
@@ -26,19 +22,20 @@ html {
 
 .content {
   position: fixed;
-  /* Width of the nav bar */
-  bottom: 100px;
-  /* Set this to the height of the footer */
+  bottom: 0;
   right: 0;
   top: 10%;
-  bottom: 0;
+  left: 240px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   overflow: auto;
-  background: transparent;
-  /* padding-top: 5%; */
-  left: 12%;
-  transition: left 0.25s ease;
+  display: flex;
   margin-bottom: auto;
-  /* background-color: #202020; */
+  background-color: #F8F7F9;
+  border-left: dashed #b00020;
+  border-top: dashed #b00020;
 }
 
 .sidebar-toggle {
@@ -55,21 +52,23 @@ html {
   outline: none;
   text-align: center;
   transition: opacity 0.3s;
-  width: 284px;
+  width: 240px;
   z-index: 30;
   /* background-color: #202020; */
 }
+
 aside.sidebar {
   padding-top: 2.75rem;
   padding-left: 1rem;
   padding-bottom: 2.75rem;
-  width: 12%;
+  width: 240px;
   border-right: none;
   font-size: 13px;
   /* background-color: #faf8fc; */
   position: fixed;
   border-right: 0.5px solid #ffffff;
-  /* background-color: #202020; */
+  background-color: #faf8fc;
+  border-right: dashed #b00020;
 }
 
 .sidebar {
@@ -81,9 +80,9 @@ aside.sidebar {
   bottom: 0;
   left: 0;
   transition: transform 0.25s ease-out;
-  width: 300px;
+  width: 240px;
   z-index: 20;
-  background-color: #202020;
+  /* background-color: #202020; */
 }
 
 .sidebar-nav {
@@ -97,15 +96,16 @@ aside.sidebar ul li p {
 }
 
 .header {
-  position: absolute;
-  left: 12%;
+  position: sticky;
+  left: 240px;
+  right: 10px;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   /* color:#222; */
-  width: 88%;
-  height: auto;
+  width: 86.5%;
+  height: 75px;
   overflow: none;
   /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
   background: #faf8fc;
@@ -113,10 +113,12 @@ aside.sidebar ul li p {
   top: 0%;
   border-bottom: 0.5px solid #ffffff;
   /* background-color: #202020; */
+  border-bottom: dashed #b00020;
 }
+
 .footer {
-  position: absolute;
-  left: 12%;
+  position: sticky;
+  left: 240px;
   bottom: 0%;
   width: 88%;
   height: 10%;
@@ -150,17 +152,12 @@ aside.sidebar ul li p {
   --fa-secondary-color: rgb(108, 108, 108);
 }
 
-
-.spacer {
-  margin-top: 250px;
-}
-
 .Return {
   margin-top: 50px;
   text-align: center;
 }
 
-aside.subnav{
+aside.subnav {
   position: absolute;
   width: 100%;
   padding-right: 15px;
@@ -171,7 +168,5 @@ aside.subnav{
   top: 0;
   bottom: auto;
   right: 0;
-  borde-left: 0.5px dashed #111;
-
-
+  border-left: 0.5px dashed #111;
 }

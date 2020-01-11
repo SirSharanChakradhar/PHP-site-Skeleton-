@@ -110,44 +110,106 @@ require "includes/showmenu.inc.php";
                 <li><a href="#a003">Jump to a003</a></li>
             </ul>
         </aside>
-        
-        <div class="spacer"><a name="a001">a001</a></div>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <hr class="is-visible">
-  <hr class="is-visible is-wavy">
-        <div class="spacer"><a name="a002">a002</a></div>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <hr class="is-visible">
-  <hr class="is-visible is-wavy">
-        <div class="spacer"><a name="a003">a003</a></div>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
-        <p>paragraph text paragraph text paragraph text</p>
+        <aside>
+        <div class="box is-well hover-to-popping">Small</div>
+            <div class="box is-well hover-to-popping"><a name="a001">a001</a>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+            </div>
+            
+            <div class="box is-well hover-to-popping"><a name="a002">a002</a>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+            </div>
+            <div class="box is-well hover-to-popping"><a name="a003">a003</a>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+                <p>paragraph text paragraph text paragraph text</p>
+            </div>
 
-        <hr>
-        <hr class="is-visible">
-  <hr class="is-visible is-wavy">
-        <p><a href="#menu">Jump to Menu</a></p>
-        <hr class="is-visible">
-  <hr class="is-visible is-wavy">
-        <p class="Return"><a href="http://www.tagindex.net/html/link/a_name.html">Return</a></p>
-
+            <hr class="is-visible is-wavy">
+            <p><a href="#menu">Jump to Menu</a></p>
+            <hr class="is-visible">
+            <hr class="is-visible is-wavy">
+            <p class="Return"><a href="http://www.tagindex.net/html/link/a_name.html">Return</a></p>
+        </aside>
 
     </div>
     <!-- <footer class="footer">
