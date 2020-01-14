@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `guestnventory`
+-- Database: `phpskelton`
 --
 
 -- --------------------------------------------------------
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `gi_kitting`
 --
 
-CREATE TABLE `gi_kitting` (
+CREATE TABLE `kitting` (
   `id` int(11) NOT NULL,
   `title` varchar(1000) NOT NULL,
   `parent_id` int(11) DEFAULT NULL,
@@ -37,10 +37,10 @@ CREATE TABLE `gi_kitting` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `gi_kitting`
+-- Dumping data for table `kitting`
 --
 
-INSERT INTO `gi_kitting` (`id`, `title`, `parent_id`, `page`, `sort_order`) VALUES
+INSERT INTO `kitting` (`id`, `title`, `parent_id`, `page`, `sort_order`) VALUES
 (1, '<i class=\"fad fa-brain\"></i>&nbsp;MASTER DATA', NULL, 'master.php', 1),
 (2, '<i class=\"fad fa-file-code\"></i>&nbsp;SIGN UP', 3, 'signup.php', 1),
 (3, '<i class=\"fad fa-browser\"></i>&nbsp;GENERAL', NULL, 'general.php', 1),
@@ -70,7 +70,7 @@ CREATE TABLE `users` (
 --
 
 --
--- Indexes for table `gi_kitting`
+-- Indexes for table `kitting`
 --
 ALTER TABLE `kitting`
   ADD PRIMARY KEY (`id`);
