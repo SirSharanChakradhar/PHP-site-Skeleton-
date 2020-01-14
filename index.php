@@ -81,10 +81,10 @@ require "includes/showmenu.inc.php";
     <aside class="sidebar">
         <div class="sidebar-nav">
             <ul class="logo is-box">
-                <li class="is-size-4">
+                <li class="is-size-4" border-bottom=dashed #b00020>
                     <p class="is-size-3 " href="index.php">
                         <strong>Office <br /> Jerks
-                            <i class="fad fa-cubes"> </i></strong>
+                            <i class="fad fa-alien"> </i></strong>
                     </p>
                     <hr>
                 </li>

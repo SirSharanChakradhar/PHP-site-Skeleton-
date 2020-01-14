@@ -3,7 +3,7 @@
  $dBServername = "localhost";
  $dBUsername = "root";
  $dBPassword = "";
- $dBName = "guestnventory";
+ $dBName = "phpskelton";
 
 // Create connection
 
