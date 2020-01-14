@@ -9,8 +9,8 @@
  */
 
 /* html {
-  /* overflow-x: none;
-  overflow-y: none; */
+  overflow-x: none;
+  overflow-y: none; 
   background-color: #fff;
 } */
 
@@ -34,8 +34,8 @@ body, html {
   display: flex;
   margin-bottom: auto;
   background-color: #F8F7F9;
-  border-left: dashed #b00020;
-  border-top: dashed #b00020;
+  /* border-left: dashed #b00020;
+  border-top: dashed #b00020; */
 }
 
 .sidebar-toggle {
@@ -68,7 +68,7 @@ aside.sidebar {
   position: fixed;
   border-right: 0.5px solid #ffffff;
   background-color: #faf8fc;
-  border-right: dashed #b00020;
+  /* border-right: dashed #b00020; */
 }
 
 .sidebar {
@@ -104,7 +104,7 @@ aside.sidebar ul li p {
   padding-top: 10px;
   padding-bottom: 10px;
   /* color:#222; */
-  width: 86.5%;
+  width: 85.5%;
   height: 75px;
   overflow: none;
   /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
@@ -113,7 +113,7 @@ aside.sidebar ul li p {
   top: 0%;
   border-bottom: 0.5px solid #ffffff;
   /* background-color: #202020; */
-  border-bottom: dashed #b00020;
+  /* border-bottom: dashed #b00020; */
 }
 
 .footer {
@@ -141,16 +141,16 @@ aside.sidebar ul li p {
   border: none;
 }
 
-:root {
-  --fa-primary-color: #b00020;
-  --fa-secondary-color: #fff;
-}
+/* :root {
+  --fa-primary-color: #94A9CA;
+  --fa-secondary-color: #BBC8DA;
+} */
 
 .theme-ravenclaw {
   --fa-secondary-opacity: 1;
-  --fa-primary-color: rgb(4, 56, 161);
-  --fa-secondary-color: rgb(108, 108, 108);
-}
+  --fa-primary-color: #94A9CA;
+  --fa-secondary-color: #BBC8DA;
+} 
 
 .Return {
   margin-top: 50px;
