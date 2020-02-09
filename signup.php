@@ -1,8 +1,5 @@
-
-
-
-
-    <section class="content is-narrow">
+<div id="content">
+<section class="content is-narrow">
         
         <div class="markdown-section">
             <h1 class="title is-1 is-family-secondary">Signup</h1>
@@ -84,6 +81,6 @@
           -->
         </div>
     </section>
-
+        </div>
 
 

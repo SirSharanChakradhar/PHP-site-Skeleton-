@@ -24,11 +24,13 @@ function gmm( $conn, $parent_id=NULL){
 		else{
 			$menu .='<li><p><span class="subtitle is-6 has-text-dark has-text-weight-semibold is-uppercase"></span><a href="#">'.$row['title'].'</a></p></li>';
 		}
-		$menu .= '<ul class="menu-list">'.gmm($conn, $row['id']).'</ul>';
+		$menu .= '<ul id="content" class="menu-list">'.gmm($conn, $row['id']).'</ul>';
 		$menu .= '';
 	 }
 	 return $menu;
 	}
+
+
 
 
   ?>

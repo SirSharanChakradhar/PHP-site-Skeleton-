@@ -44,6 +44,21 @@ require "includes/showmenu.inc.php";
     <link rel="stylesheet" href="./assets/css/template.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 
+<script>
+$(function () {
+    	$("content").click(function() {
+    	  $("ul").slideToggle();
+    	  $("ul ul").css("display", "none");
+    	});
+    	$("ul li").click(function(e) {
+    	  $(this).find("ul").slideToggle();
+    	  $(this).find("ul ul").css("display", "none");
+    	  e.stopPropagation();
+    	});
+    });
+</script>
+
+
 
 </head>
 
@@ -83,7 +98,7 @@ require "includes/showmenu.inc.php";
             <ul class="logo is-box">
                 <li class="is-size-4" border-bottom=dashed #b00020>
                     <p class="is-size-3 " href="index.php">
-                        <strong>Office <br /> Jerks
+                        <strong>Guest <br /> Inventory
                             <i class="fad fa-alien"> </i></strong>
                     </p>
                     <hr>
@@ -97,12 +112,13 @@ require "includes/showmenu.inc.php";
     </aside>
 
 
-    <div class="content">
+    <div class="content" id="content" >
+    
+</div>
+ 
 
 
-
-
-        <aside class="subnav">
+        <!-- <aside class="subnav">
             <a name="menu">Menu</a>
             <ul>
                 <li><a href="#a001">Jump to a001</a></li>
@@ -209,7 +225,7 @@ require "includes/showmenu.inc.php";
             <hr class="is-visible">
             <hr class="is-visible is-wavy">
             <p class="Return"><a href="http://www.tagindex.net/html/link/a_name.html">Return</a></p>
-        </aside>
+        </aside> -->
 
     </div>
     <!-- <footer class="footer">
